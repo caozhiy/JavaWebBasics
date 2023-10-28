@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<outer>
+    <name>阿伟</name>
+    <desc>怎么又在玩游戏</desc>
+    <!--    属性type -->
+    <inner type='1'>
+        <age>15</age>
+        <sex>男</sex>
+        <!--        使用'<'等转义字符-->
+        <compare>10 &lt; 9</compare>
+        <!--        使用CDATA,相当于使用原始字符串-->
+        <origin><![CDATA[
+            hello world, <> <> <>
+            /</>
+        ]]></origin>
+
+    </inner>
+</outer>

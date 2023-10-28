@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="edu.jlu.MyBatis.TestMapper.TestMapper">
+    <select id="selectEmployee" resultType="edu.jlu.MyLombok.Employee">
+        select *
+        from employees
+    </select>
+    <select id="selectTargetEmployee" resultType="edu.jlu.MyLombok.Employee">
+        select *
+        from employees
+        where employee_id = #{employee_id}
+    </select>
+</mapper>
